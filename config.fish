@@ -16,4 +16,39 @@ for flatpakdir in ~/.local/share/flatpak/exports/bin /var/lib/flatpak/exports/bi
     end
 end
 
+# Flatpak aliases
 alias ff='flatpak run org.mozilla.firefox'
+
+# Git aliases (https://gist.github.com/freewind/773c3324b5288ff636af)
+alias g='git'
+alias gst='git status'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gl='git pull'
+alias gp='git push'
+alias gc='git commit -m'
+alias gco='git checkout'
+alias gr='git remote'
+alias grv='git remote -v'
+alias gb='git branch -b'
+alias ga='git add'
+
+#
+# Will return the current branch name
+# Usage example: git pull origin $(current_branch)
+#
+function current_branch
+  set ref (git symbolic-ref HEAD 2> /dev/null); or \
+  set ref (git rev-parse --short HEAD 2> /dev/null); or return
+  echo ref | sed s-refs/heads--
+end
+
+function current_repository
+  set ref (git symbolic-ref HEAD 2> /dev/null); or \
+  set ref (git rev-parse --short HEAD 2> /dev/null); or return
+  echo (git remote -v | cut -d':' -f 2)
+end
+
+# these aliases take advantage of the previous function
+alias ggpull='git pull origin (current_branch)'
+alias ggpush='git push origin (current_branch)'
