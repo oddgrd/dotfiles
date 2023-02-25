@@ -18,6 +18,7 @@ end
 
 # Flatpak aliases
 alias ff='flatpak run org.mozilla.firefox'
+alias notes='flatpak run md.obsidian.Obsidian'
 
 # Git aliases (https://gist.github.com/freewind/773c3324b5288ff636af)
 alias g='git'

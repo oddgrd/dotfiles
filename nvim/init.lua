@@ -26,6 +26,13 @@ require('packer').startup(function(use)
     },
   }
 
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+  }
+
   use { -- Autocompletion
     'hrsh7th/nvim-cmp',
     requires = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
@@ -37,7 +44,7 @@ require('packer').startup(function(use)
       pcall(require('nvim-treesitter.install').update { with_sync = true })
     end,
   }
-  use 'rust-lang/rust.nvim'
+
   use { -- Additional text objects via treesitter
     'nvim-treesitter/nvim-treesitter-textobjects',
     after = 'nvim-treesitter',
@@ -102,8 +109,8 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 -- Set highlight on search
 vim.o.hlsearch = false
 
--- Run rustfmt on save
-vim.g.rustfmt_autosave = 1
+-- Run format on save
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
 
 -- Make line numbers default
 vim.wo.number = true
@@ -171,6 +178,9 @@ require('lualine').setup {
 
 -- Enable Comment.nvim
 require('Comment').setup()
+
+-- empty setup using defaults
+require("nvim-tree").setup()
 
 -- Enable `lukas-reineke/indent-blankline.nvim`
 -- See `:help indent_blankline.txt`
@@ -425,4 +435,3 @@ cmp.setup {
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
-
