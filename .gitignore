@@ -13,8 +13,6 @@
 !i3/*
 !Code/*/settings.json
 !Code/*/keybindings.json
-!eww/*
-!leftwm/**
 !nvim/*
 !.vimdid/*
 !.xbindkeysrc
