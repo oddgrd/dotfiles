@@ -34,10 +34,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# Launch firefox, VSCode and a terminal on startup.
-exec --no-startup-id i3-msg 'workspace 1:Web; exec /usr/bin/alacritty'
-exec --no-startup-id i3-msg 'workspace 1:Web; exec /usr/bin/alacritty'
-exec --no-startup-id i3-msg 'workspace 1:Web; exec /usr/bin/firefox'
+# # Launch firefox and a terminal on startup.
+# exec --no-startup-id i3-msg 'workspace 1:Web; exec /usr/bin/firefox'
+# exec --no-startup-id i3-msg 'workspace 1:Web; exec /usr/bin/alacritty'
+# exec --no-startup-id i3-msg 'workspace 1:Web; exec /usr/bin/alacritty'
 
 # Run script to toggle displays.
 bindsym $mod+Shift+s exec --no-startup-id /home/oddgrd/.config/scripts/toggle-displays.sh
