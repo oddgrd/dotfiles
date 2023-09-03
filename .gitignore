@@ -1,10 +1,12 @@
 # Ignore everything by default.
 *
 
+# Whitelist anything that's a directory.
 !*/
 
-# Allow
+# Whitelisted files.
 !.gitignore
+!README.md
 !alacritty.yml
 !config.fish
 !scripts/toggle-displays.sh
@@ -12,5 +14,7 @@
 !Code/*/settings.json
 !Code/*/keybindings.json
 !eww/*
+!leftwm/**
 !nvim/*
 !.vimdid/*
+!.xbindkeysrc
