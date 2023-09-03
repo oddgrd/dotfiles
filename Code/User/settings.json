@@ -1,0 +1,54 @@
+{
+    
+    "workbench.startupEditor": "newUntitledFile",
+    "git.confirmSync": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": true,
+    "debug.allowBreakpointsEverywhere": true,
+    "rust-analyzer.cargo.allFeatures": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "editor.guides.bracketPairs": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    },
+    "redhat.telemetry.enabled": false,
+    "editor.bracketPairColorization.enabled": true,
+    "rust-analyzer.inlayHints.enable": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.minimap.enabled": false,
+    "files.insertFinalNewline": true,
+    "editor.inlayHints.enabled": false,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "window.menuBarVisibility": "toggle"
+    // "terminal.integrated.defaultProfile.linux": "bash",
+    // "terminal.integrated.profiles.linux": {
+    //     "bash": {
+    //         "path": "/usr/bin/flatpak-spawn",
+    //         "args": ["--host", "--env=TERM=xterm-256color", "bash"]
+    //     }
+  
+}

@@ -1,0 +1,16 @@
+# Ignore everything by default.
+*
+
+!*/
+
+# Allow
+!.gitignore
+!alacritty.yml
+!config.fish
+!scripts/toggle-displays.sh
+!i3/*
+!Code/*/settings.json
+!Code/*/keybindings.json
+!eww/*
+!nvim/*
+!.vimdid/*
