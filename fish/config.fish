@@ -16,6 +16,7 @@ end
 # Flatpak aliases
 alias obs='flatpak run md.obsidian.Obsidian'
 alias discord='flatpak run com.discordapp.Discord'
+alias disc='flatpak run com.discordapp.Discord'
 alias signal='flatpak run org.signal.Signal'
 alias spotify='flatpak run com.spotify.Client'
 
@@ -42,6 +43,7 @@ alias ga='git add'
 
 # Cargo aliases
 alias c='cargo'
+alias cr='cargo run'
 alias cl='cargo clippy'
 alias ch='cargo check'
 
@@ -55,4 +57,5 @@ end
 
 # these aliases take advantage of the previous function
 alias ggpull='git pull upstream (curr)'
+alias ggpoll='git pull origin (curr)'
 alias ggpush='git push origin (curr)'

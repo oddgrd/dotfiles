@@ -1,4 +1,6 @@
 function shuttle-bump-versions -a old -a new
+    # This function depends on the fastmod and cargo-edit crates.
+    
     cd ~/dev/shuttle
     
     cargo set-version --workspace $new

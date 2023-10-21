@@ -34,8 +34,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# Lock screen after 15 minutes idle time.
-exec --no-startup-id xset s 900
+# Lock and disable screen after 12 minutes idle time.
+exec --no-startup-id xset dpms 0 0 720
 
 # Run script to toggle displays.
 bindsym $mod+Shift+s exec --no-startup-id /home/oddgrd/.config/scripts/toggle-displays.sh
