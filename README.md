@@ -14,6 +14,11 @@
 - Starship
 - rewrk
 - cargo-udeps
+- fastmod
+- cargo-edit
+- cargo-expand
+- cargo-binstall
+
 
 ### Scripts
 
