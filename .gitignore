@@ -16,3 +16,7 @@
 !nvim/*
 !.vimdid/*
 !.xbindkeysrc
+
+# Include fish functions except aws-profile.
+!fish/functions/*
+fish/functions/aws-profile.fish
