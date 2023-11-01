@@ -16,6 +16,7 @@
 !nvim/*
 !.vimdid/*
 !.xbindkeysrc
+!zellij/*
 
 # Include fish functions except aws-profile.
 !fish/functions/*

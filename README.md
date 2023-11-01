@@ -2,16 +2,18 @@
 
 ### Config for:
 
-- Alacritty
-- fish
-- nvim
-- i3
+- Alacritty (terminal emulator)
+- fish (shell)
+- Starship (shell prompt)
+- Neovim (editor)
+- VS Code (editor)
+- i3 (window manager)
+- Zellij (terminal multiplexer)
 
 ### Additionally I use:
 
-- Kondo
 - riprep
-- Starship
+- Kondo
 - rewrk
 - cargo-udeps
 - fastmod
