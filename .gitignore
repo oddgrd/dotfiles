@@ -10,6 +10,7 @@
 !alacritty.yml
 !config.fish
 !scripts/toggle-displays.sh
+!scripts/set-display-resolution.sh
 !i3/*
 !Code/*/settings.json
 !Code/*/keybindings.json

@@ -19,6 +19,7 @@ alias discord='flatpak run com.discordapp.Discord'
 alias disc='flatpak run com.discordapp.Discord'
 alias signal='flatpak run org.signal.Signal'
 alias spotify='flatpak run com.spotify.Client'
+alias steam='flatpak run com.valvesoftware.Steam'
 
 # Misc aliases
 alias ff='firefox'
