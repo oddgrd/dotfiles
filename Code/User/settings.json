@@ -41,4 +41,5 @@
     "window.menuBarVisibility": "toggle",
     "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
     "editor.fontFamily": "FiraCode Nerd Font Mono",
+    "git.enableSmartCommit": true,
 }

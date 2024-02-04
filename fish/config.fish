@@ -47,6 +47,8 @@ alias c='cargo'
 alias cr='cargo run'
 alias cl='cargo clippy'
 alias ch='cargo check'
+alias ct='cargo test'
+alias cta='cargo test --all-features'
 
 #
 # Will return the current branch name
